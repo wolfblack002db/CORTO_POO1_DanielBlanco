@@ -7,8 +7,9 @@ package com.sv.udb.forms;
 import com.sv.udb.clases.jugadores;
 import javax.swing.JOptionPane;
 /**
- *
- * @author Daniel
+ * Corto: Ingreso de jugadores
+ * @author Daniel Blanco
+ * 
  */
 public class Jugadores extends javax.swing.JFrame {
 
@@ -148,7 +149,11 @@ public class Jugadores extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    /**
+     * Valido que los campos no esten vacios
+     * valido que sean numeros los campos de edad,estatura y peso
+     * envio los parametros recividos de les TextField al metodo agregar que se encuentra en la clase jugadores
+     */
     private void btnagregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnagregarActionPerformed
         // TODO add your handling code here:
         try {
@@ -166,23 +171,32 @@ public class Jugadores extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_btnagregarActionPerformed
-    
+    /** 
+     *Metodo para limpiar los TextField
+     */
     public void limpiar(){
         txtnombre.setText("");
         txtedad.setText("");
         txtestatura.setText("");
         txtpeso.setText("");
     }
+    /**
+     *Mando a llamar el metodo edad de la clase jugadores
+     */
     private void btnedadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnedadActionPerformed
         // TODO add your handling code here:
         claseju.edad();
     }//GEN-LAST:event_btnedadActionPerformed
-
+    /**
+     *Mando a llamar el metodo peso de la clase jugadores
+     */
     private void btnpesoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpesoActionPerformed
         // TODO add your handling code here:
         claseju.peso();
     }//GEN-LAST:event_btnpesoActionPerformed
-
+    /**
+     *Mando a llamar el metodo estatura de la clase jugadores
+     */
     private void btnestaturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnestaturaActionPerformed
         // TODO add your handling code here:
         claseju.estatura();

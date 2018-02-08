@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Daniel
+ * @author Daniel Blanco
  */
 public class jugadores {
     List<objetoJugadores> listjugadores;
@@ -20,6 +20,13 @@ public class jugadores {
         this.listjugadores= new ArrayList<>();
     }
     
+    /**
+     *
+     * @param nombre, nombre del jugador recivida
+     * @param edad, edad del jugador recivida
+     * @param estatura, estatura del jugador recivida
+     * @param peso, pedo del jugador recivido
+     */
     public void agregar(String nombre,int edad,double estatura,double peso){
         objetoJugadores objju = new objetoJugadores(nombre, edad, estatura, peso);
         this.listjugadores.add(objju);
@@ -27,6 +34,9 @@ public class jugadores {
         
     }
     
+    /**
+     * Metodo edad que compara cual es la menor edad entre los jugadores
+     */
     public void edad(){
         int edad=1000000;
         String nombre="";
@@ -51,6 +61,9 @@ public class jugadores {
         }
     }
     
+    /**
+     *Metodo estatura para verificar que jugador tiene mayor estatura
+     */
     public void estatura(){
         double estatura=0.0;
         String nombre="";
@@ -77,6 +90,9 @@ public class jugadores {
         }
     }
     
+    /**
+     *Metodo peso para verficiar cual es el jugador con mayor peso
+     */
     public void peso(){
         double peso=0.0;
         String nombre="";
